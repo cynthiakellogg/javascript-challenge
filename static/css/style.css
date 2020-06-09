@@ -65,6 +65,11 @@ body {
   margin-top: 10px;
 }
 
+#filter-btn {
+ margin: 10px;
+  background-color: lightcoral;
+}
+
 select {
   display: block;
   width: 100%;
