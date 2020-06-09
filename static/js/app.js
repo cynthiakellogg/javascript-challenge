@@ -1,17 +1,12 @@
 // from data.js
 var tableData = data;
-
 var tbody = d3.select("tbody");
-
-
-
-
-// filteredTableData = [];
 
 var input = d3.select("#datetime");
 input.on("change", newInput);
 
 function newInput() {
+    tbody.html("");
     d3.event.preventDefault();
     var inputField = d3.select("#datetime");
     var inputValue = inputField.property("value");
@@ -28,6 +23,3 @@ function newInput() {
     });
   };
 
-//
-  
-//   var filteredData = tableData.filter(tableData => tableData.date === inputValue);
